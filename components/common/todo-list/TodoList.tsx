@@ -21,7 +21,7 @@ const TodoList = ({
   return (
     <ul className="space-y-2 overflow-y-auto h-96">
       {filteredTodos?.length ? (
-        filteredTodos.map((task, index) => (
+        filteredTodos.map((task) => (
           <div key={task.id}>
             <TodoItem
               task={task}
